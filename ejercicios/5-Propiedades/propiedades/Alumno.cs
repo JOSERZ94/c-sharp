@@ -15,4 +15,10 @@ public class Alumno
 
     }
 
+    public Alumno(string primerNombre, string segundoNombre){
+        PrimerNombre = primerNombre;
+        SegundoNombre = segundoNombre;
+
+    }
+
 }
