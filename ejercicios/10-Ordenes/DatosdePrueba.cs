@@ -165,17 +165,17 @@ public class DatosdePrueba
     {
         Console.Clear();
         Console.WriteLine("Lista de Ordenes");
-        Console.WriteLine("================");
+        Console.WriteLine("===============================================================================");
         Console.WriteLine("");  
-        Console.WriteLine("Codigo | Fecha | Total");
-        Console.WriteLine("Cliente | Vendedor");
-        Console.WriteLine("======================");
+        Console.WriteLine("Codigo | Fecha              |SubTotal | Impuesto | Total | Cliente | Vendedor");
+      //  Console.WriteLine("Cliente | Vendedor");
+        Console.WriteLine("===============================================================================");
         Console.WriteLine("");  
 
         foreach (var orden in ListaOrdenes)
         {
-            Console.WriteLine(orden.Codigo + " | " + orden.Fecha + " | " + orden.Total);
-            Console.WriteLine(orden.Cliente.Nombre + " | " + orden.Vendedor.Nombre);
+            Console.WriteLine(    orden.Codigo +    "    | " + orden.Fecha +  " | "+ orden.SubTotal + "      | "+ orden.Impuesto + "     | " + orden.Total + "  |" +orden.Cliente.Nombre + "    | " + orden.Vendedor.Nombre);
+        //    Console.WriteLine(orden.Cliente.Nombre + " | " + orden.Vendedor.Nombre);
             
             foreach (var detalle in orden.ListaOrdenDetalle)
             {
