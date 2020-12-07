@@ -1,19 +1,19 @@
 using System;
-public class Perro: Mamifero // <- Herencia
+public class Perro: Mamifero 
 {
     public bool EsDomestico { get; set; }
 
-    public Perro() // <- Polimorfismo
+    public Perro() 
     {
         EsDomestico = true;
     }
 
-    public Perro(bool esDomestico) // <- Polimorfismo
+    public Perro(bool esDomestico) 
     {
         EsDomestico = esDomestico;
     }
 
-    public void Ladrar() // <- Abstraccion
+    public void Ladrar() 
     {
         Console.WriteLine("Gua gua gua");
     }
@@ -24,12 +24,12 @@ public class Perro: Mamifero // <- Herencia
         OtroMetodo();
     }
 
-    private void DescribirTamano() // <- Encapsulamiento
+    private void DescribirTamano() 
     {
         Console.WriteLine("Es un perro grande");
     }
 
-    private void OtroMetodo() // <- Encapsulamiento
+    private void OtroMetodo() 
     {
 
     }

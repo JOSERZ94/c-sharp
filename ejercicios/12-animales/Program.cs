@@ -51,6 +51,26 @@ namespace _12_ejercicio_clase_animales
             Console.WriteLine(a.Nombre);
             Console.WriteLine(a.Patas);
 
+            Cocodrilo c = new Cocodrilo();
+            c.Nombre = "depredador";
+            c.Patas = 4;
+            c.Tamano();
+            c.Cazar();
+            c.Caminar();
+            Console.WriteLine(c.Nombre);
+            Console.WriteLine(c.Patas);
+        
+            Tortuga t = new Tortuga();
+            t.Nombre = "Donatello";
+            t.Patas = 4;
+            t.Piel = "escamosa";
+            t.Comer();
+            t.Caminar();
+            t.Nadar();
+
+          Console.WriteLine(t.Nombre);
+            Console.WriteLine(t.Patas);
+
         }
     }
 }
