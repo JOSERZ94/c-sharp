@@ -99,15 +99,20 @@ public class DatosdeCovid
     }
 
     public void CrearIngreso()
+
     {
+
+    
         Console.WriteLine("Creando Ingreso");
         Console.WriteLine("=============");
         Console.WriteLine("");
 
-        Console.WriteLine("Ingrese el ID del cliente: ");
+
+
+       Console.WriteLine("Ingrese el ID del cliente: ");
         string codigoCliente = Console.ReadLine();
 
-        Cliente cliente = ListadeClientes.Find(c => c.Codigo.ToString() == codigoCliente);        
+     Cliente cliente = ListadeClientes.Find(c => c.Codigo.ToString() == codigoCliente);        
         if (cliente == null)
         {
             Console.WriteLine("Cliente no encontrado");
@@ -132,7 +137,7 @@ public class DatosdeCovid
             Console.WriteLine("");
         }
 
-        int nuevoCodigo = ListaIngresos.Count + 1;
+              int nuevoCodigo = ListaIngresos.Count + 1;
 
         Ingreso nuevaIngreso = new Ingreso(nuevoCodigo, DateTime.Now, "SPS" + nuevoCodigo, cliente, doctor);
         ListaIngresos.Add(nuevaIngreso);
